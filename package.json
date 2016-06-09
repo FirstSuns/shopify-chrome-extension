@@ -1,0 +1,24 @@
+{
+  "name": "shopify-browser-extension",
+  "version": "0.1.0",
+  "description": "Shopify Browser Extension",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:pro": "webpack --progress -p"
+  },
+  "keywords": [
+    "shopify",
+    "ecommerce",
+    "browser",
+    "extension",
+    "chrome",
+    "chrome-extension"
+  ],
+  "author": "Julio Napurí",
+  "license": "MIT",
+  "dependencies": {
+  },
+  "devDependencies": {
+  }
+}

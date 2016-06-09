@@ -1,0 +1,34 @@
+{
+  "manifest_version": 2,
+  "name": "Shopify Browser Extension",
+  "version": "0.1.0",
+
+  "default_locale": "en",
+  "description": "__MSG_appDesc__",
+
+  "icons": {
+    "16": "images/shopify-16.png",
+    "19": "images/shopify-19.png",
+    "32": "images/shopify-32.png",
+    "38": "images/shopify-38.png",
+    "128": "images/shopify-128.png"
+  },
+
+  "background": {
+    "scripts": ["js/background.js"],
+    "persistent": false
+  },
+
+  "browser_action": {
+    "default_title": "Shopify Browser Extension"
+  },
+
+  "content_scripts": [{
+    "matches": ["*://*/products/*", "*://*/collections/*/products/*"],
+    "js": ["js/content.js"],
+    "run_at": "document_idle",
+    "all_frames": false
+  }],
+
+  "permissions": ["activeTab"]
+}
