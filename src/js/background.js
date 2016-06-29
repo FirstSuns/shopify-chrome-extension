@@ -15,29 +15,29 @@ chrome.browserAction.onClicked.addListener(function(tab, url) {
  *  Get the Shopify Product Data
  */
 function getShopifyProduct(url, callback) {
-	var xhr = new XMLHttpRequest();
-	var product;
+  var xhr = new XMLHttpRequest();
+  var product;
 
-	xhr.open("GET", url, true);
-	xhr.onreadystatechange = function() {
-		if (xhr.readyState == 4) {
+  xhr.open("GET", url, true);
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState == 4) {
       var data = JSON.parse(xhr.responseText);
-			var variant = data.product.variants[0];
-			product = {
-				id: data.product.id,
-				title: data.product.title,
-				price: variant.price,
-				sku: variant.sku,
-				quantity: variant.inventory_quantity,
-				weight: variant.weight,
-				weight_unit: variant.weight_unit
-			};
+      var variant = data.product.variants[0];
+      product = {
+        id: data.product.id,
+        title: data.product.title,
+        price: variant.price,
+        sku: variant.sku,
+        quantity: variant.inventory_quantity,
+        weight: variant.weight,
+        weight_unit: variant.weight_unit
+      };
       console.log('Product: (background.js)');
       console.log(product);
       callback(product);
-		}
-	}
-	xhr.send();
+    }
+  }
+  xhr.send();
 }
 
 /**
@@ -57,4 +57,4 @@ chrome.runtime.onMessage.addListener(
       });
       return true;
     }
-});
+  });

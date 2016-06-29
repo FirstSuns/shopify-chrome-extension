@@ -1,10 +1,11 @@
 {
+  "update_url": "https://clients2.google.com/service/update2/crx",
   "manifest_version": 2,
-  "name": "Shopify Browser Extension",
+  "name": "__MSG_appName__",
   "version": "0.1.0",
 
   "default_locale": "en",
-  "description": "__MSG_appDesc__",
+  "description": "__MSG_appDescription__",
 
   "icons": {
     "16": "images/shopify-16.png",

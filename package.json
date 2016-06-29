@@ -18,7 +18,17 @@
   "author": "Julio Napurí",
   "license": "MIT",
   "dependencies": {
+    "react": "^15.0.1",
+    "react-dom": "^15.0.1"
   },
   "devDependencies": {
+    "babel-core": "^6.9.1",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.9.0",
+    "gulp": "^3.9.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-util": "^3.0.7",
+    "rimraf": "^2.5.2",
+    "webpack": "^1.13.0"
   }
 }

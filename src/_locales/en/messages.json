@@ -1,10 +1,8 @@
 {
-    "appName": {
-        "message": "Shopify Chrome Extension",
-        "description": "A chrome extension for Shopify."
-    },
-    "appDesc": {
-        "message": "Shopify Chrome Extension",
-        "description": "A chrome extension for Shopify."
-    }
+  "appName": {
+    "message": "Shopify Chrome Extension"
+  },
+  "appDescription": {
+    "message": "A chrome extension for Shopify."
+  }
 }
